@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 export default class SearchForm extends Component {
   state = {
     query: '',

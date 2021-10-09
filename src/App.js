@@ -74,11 +74,7 @@ export default class App extends Component {
       <div className="App">
         <SearchForm onSubmit={this.handleFormSubmit}></SearchForm>
         <ToastContainer autoClose={4000} />
-        {status === Status.IDLE && (
-          <div className="imgGreet">
-            Hello =)
-          </div>
-        )}
+        {status === Status.IDLE && <div className="imgGreet">Hello =)</div>}
         <ImageGallery images={this.state.images} />
         {status === Status.REJECTED && (
           <div className="imgGreet">
